@@ -1,6 +1,8 @@
 <?php
+session_start();
+
   function connect() {
-    return new PDO("mysql:dbname=shop", "root");
+    return new PDO("mysql:dbname=shop", "root", "pass");
   }
 
   function img_tag($code) {
